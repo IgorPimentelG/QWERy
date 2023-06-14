@@ -1,3 +1,6 @@
+import '@global/styles/colors.css';
+import '@global/styles/default.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
