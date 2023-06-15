@@ -1,0 +1,16 @@
+.titleWrap {
+  display: flex;
+  gap: 16px;
+  opacity: 0.8;
+  align-items: center;
+}
+
+.titleWrap h4 {
+  text-transform: uppercase;
+  color: var(--orange-900);
+}
+
+.line {
+  border: 2px solid var(--orange-900);
+  width: 80px;
+}

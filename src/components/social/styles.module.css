@@ -1,0 +1,26 @@
+.socialWrap {
+  display: flex;
+  gap: 16px;
+}
+
+.socialWrap,
+.socialWrap > a {
+  color: var(--white-900);
+  transition: .2s ease-in;
+}
+
+.socialWrap > span {
+  font-size: 14px;
+}
+
+.socialWrap > a:hover {
+  transform: scaleY(1.1);
+}
+
+.socialWrap[data-alignment="VERTICAL"] {
+  flex-direction: column;
+}
+
+.socialWrap[data-alignment="VERTICAL"] > span {
+  writing-mode: vertical-lr;
+}

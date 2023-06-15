@@ -1,0 +1,44 @@
+.mainSection {
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(
+      170deg,
+      hsl(0deg 0% 0%) 0%,
+      hsla(0, 0%, 100%, 0) 50%
+    ),
+    url("../../assets/images/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.socialWrap {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  color: var(--white-900);
+}
+
+.content h1 {
+  font-size: 98px;
+}
+
+.content span {
+  font-size: 78px;
+  opacity: 0.8;
+  line-height: 48px;
+}
+
+.content button {
+  position: absolute;
+  bottom: 35%;
+}

@@ -4,6 +4,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  background-color: var(--black-900);
+}
+
 button {
   cursor: pointer;
+  border: none;
 }

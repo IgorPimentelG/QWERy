@@ -1,0 +1,46 @@
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  opacity: 0.8;
+}
+
+.inputWrap input {
+  outline: none;
+  font-size: 18px;
+  width: 60px;
+}
+
+.inputWrap button,
+.inputWrap input,
+.inputWrap input::placeholder {
+  color: var(--white-900);
+}
+
+.inputWrap input,
+.inputWrap button {
+  border: 0;
+  background-color: transparent;
+}
+
+.inputWrap button {
+  font-size: 24px;
+  margin-bottom: -8px;
+}
+
+.inputWrap > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrap > div:focus-within .outline {
+  height: 2px;
+  margin-top: 2px;
+  background-color: var(--white-900);
+  animation: outline-fadeIn .2s ease-in;
+}
+
+@keyframes outline-fadeIn {
+  from {  width: 0; }
+  to { width: 60px; }
+}
