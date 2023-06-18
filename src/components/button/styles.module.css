@@ -1,0 +1,11 @@
+.btnWrap {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  padding: 16px 34px;
+  border-radius: 5px;
+  font-weight: bold;
+  align-items: center;
+  color: var(--black-900);
+  background-color: var(--orange-900);
+}

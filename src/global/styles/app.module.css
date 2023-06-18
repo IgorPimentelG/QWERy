@@ -1,10 +1,30 @@
+.mainWrap {
+  overflow: overlay;
+  max-height: 100vh;
+}
+
+.mainWrap::-webkit-scrollbar {
+  width: 4px;
+  background: transparent !important;
+}
+ 
+.mainWrap::-webkit-scrollbar-track {
+  display: none;
+}
+ 
+.mainWrap::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+
 .mainSection {
-  min-height: 100vh;
+  min-height: 150vh;
   background-image: 
     linear-gradient(
       170deg,
-      hsl(0deg 0% 0%) 0%,
-      hsla(0, 0%, 100%, 0) 50%
+      hsl(0deg 0% 0%) 3%,
+      hsla(0, 0%, 100%, 0) 50%,
+      hsl(0deg 0% 0%) 90%
     ),
     url("../../assets/images/cover.png");
   background-repeat: no-repeat;
@@ -39,6 +59,34 @@
 }
 
 .content button {
-  position: absolute;
-  bottom: 35%;
+  position: relative;
+  top: 30%;
+}
+
+.informationSection {
+  margin-top: -100px;
+}
+
+.contentSection {
+  display: flex;
+  gap: 10%;
+  width: 100%;
+  color: var(--white-900);
+  align-items: center;
+  justify-content: center;
+}
+
+.contentSection h2 {
+  font-size: 58px;
+}
+
+.contentSection p {
+  margin: 12px 0;
+  line-height: 28px;
+}
+
+.slideSection {
+  display: flex;
+  justify-content: center;
+  margin: 164px 0;
 }

@@ -1,0 +1,21 @@
+.inputWrap {
+  display: flex;
+}
+
+.inputWrap input {
+  width: 45%;
+  outline: none;
+  padding: 16px 8px;
+  color: var(--white-900);
+  border: none;
+  border-bottom: 2px solid #d3d3d377;
+  background-color: transparent;
+}
+
+.btnSubmit {
+  font-size: 24px;
+  padding: 8px 16px;
+  background-color: var(--orange-900);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}

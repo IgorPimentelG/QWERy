@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 type Props = {
   type?: 'PRIMARY' | 'SECONDARY';          
   label: string;
-  iconDirection?: 'TO LEFT' | 'TO BOTTOM';
+  iconDirection?: 'TO RIGHT' | 'TO BOTTOM';
   action: () => void;
 }
 
@@ -21,7 +21,7 @@ export const InlineButton: React.FC<Props> = ({
       className={styles.btnWrap}
     >
       {label}
-      {iconDirection === 'TO LEFT' && (
+      {iconDirection === 'TO RIGHT' && (
         <BsArrowRight />
       )}
       {iconDirection === 'TO BOTTOM' && (
