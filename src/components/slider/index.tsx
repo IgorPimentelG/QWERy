@@ -1,4 +1,3 @@
-import { InlineButton, Title } from '@components';
 import { useRef, useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import styles from './styles.module.css';
@@ -62,29 +61,9 @@ export const Slider: React.FC<Props> = ({ slides }) => {
         ref={slidesRef}
       >
         {slides.map((slide) => (
-          <>
+          <div>
             <img src={slide.image} alt={slide.title} />
-
-            <div className={styles.content}>
-              <div>
-                <Title 
-                  decorationLeft
-                  decorationRight
-                  title={slide.title} 
-                />
-                
-                <h3>{slide.subtitle}</h3>
-                <p>{slide.description}</p>
-
-                <InlineButton
-                  label='read more'
-                  iconDirection='TO RIGHT'
-                  type='SECONDARY'
-                  action={() => {}} 
-                />  
-              </div>
-            </div>
-          </>
+          </div>
         ))}
       </div>
      

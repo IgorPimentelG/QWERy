@@ -33,7 +33,7 @@ const App: React.FC = () => {
       image: MountainLargeImage,
     },
     {
-      title: 'bromo',
+      title: 'bromo 2',
       subtitle: 'Steady your steps, we will climb together!',
       description: `
         Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, 
@@ -43,7 +43,7 @@ const App: React.FC = () => {
       image: Templo1Image,
     },
     {
-      title: 'bromo',
+      title: 'bromo 3',
       subtitle: 'Steady your steps, we will climb together!',
       description: `
         Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, 
