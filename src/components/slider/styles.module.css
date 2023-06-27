@@ -43,7 +43,7 @@
 }
 
 .content h3 {
-  font-size: 58px;
+  font-size: 48px;
 }
 
 .actions {
@@ -64,4 +64,8 @@
 
 .actions button:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1270px) {
+
 }

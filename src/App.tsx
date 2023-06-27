@@ -95,79 +95,91 @@ const App: React.FC = () => {
 
       <Fade bottom>
         <section
+          id='information'
           className={`
             ${styles.contentSection} 
             ${styles.informationSection}
           `}
         >
           <div>
-            <img src={MountainSmallImage} />
-          </div>
+            <div className={styles.imageWrap}>
+              <img src={MountainSmallImage} />
+            </div>
 
-          <div>
-            <Title 
-              decorationLeft
-              title='east nusa tenggara' 
-            />
+            <div>
+              <Title 
+                decorationLeft
+                title='east nusa tenggara' 
+              />
+              <h2>
+                Have you
+                enjoyed your
+                holiday?
+              </h2>
+              <p>
+                You will be amazed if you take part in this sailing Komodo island tour
+                package. So it also mandatory for you, besides enjooying Komodo
+                tourism on Komodo Island, you have to taste the marine tourism.
+                The beautiful waters of Komodo will make you meet many travelers
+                from other countries.
+              </p>
 
-            <h2>
-              Have you <br/>
-              enjoyed your <br/>
-              holiday?
-            </h2>
-            <p>
-              You will be amazed if you take part in this sailing Komodo island tour <br/>
-              package. So it also mandatory for you, besides enjooying Komodo <br/>
-              tourism on Komodo Island, you have to taste the marine tourism. <br/>
-              The beautiful waters of Komodo will make you meet many travelers <br/>
-              from other countries.
-            </p>
-
-            <InlineButton 
-              type='SECONDARY'
-              label='read more'
-              iconDirection='TO RIGHT'
-              action={() => {}}
-            />
+              <InlineButton 
+                type='SECONDARY'
+                label='read more'
+                iconDirection='TO RIGHT'
+                action={() => {}}
+              />
+            </div>
           </div>
         </section>
       </Fade>
 
       <Fade bottom>
-        <section className={styles.slideSection}>
+        <section 
+          id='about-us'
+          className={styles.slideSection}
+        >
           <Slider slides={SLIDES} />
         </section>
       </Fade>
 
       <Fade bottom>
-        <section className={styles.contentSection}>
+        <section
+          id='culture'
+          className={`
+            ${styles.contentSection} 
+            ${styles.cultureSection}
+          `}
+        >
           <div>
-            <Title 
-              decorationLeft
-              title='indonesian culture' 
-            />
+            <div>
+              <Title 
+                decorationLeft
+                title='indonesian culture' 
+              />
+              <h2>
+                Our culture here
+                is very friendly
+                to people
+              </h2>
+              <p>
+                known for this politeness, manners and gentleness. This becomes a
+                characteristic when they mingle with other tribes and become basic trits
+                that ere passed down by ancestors.
+              </p>
 
-            <h2>
-              Our culture here <br/>
-              is very friendly <br/>
-              to people
-            </h2>
-            <p>
-              known for this politeness, manners and gentleness. This becomes a<br/>
-              characteristic when they mingle with other tribes and become basic trits <br/>
-              that ere passed down by ancestors. <br/>
-            </p>
+              <InlineButton 
+                type='SECONDARY'
+                label='read more'
+                iconDirection='TO RIGHT'
+                action={() => {}}
+              />
+            </div>
 
-            <InlineButton 
-              type='SECONDARY'
-              label='read more'
-              iconDirection='TO RIGHT'
-              action={() => {}}
-            />
-          </div>
-
-          <div>
-            <img src={PeopleImage} />
+            <div className={styles.imageWrap}>
+              <img src={PeopleImage} />
+            </div>
           </div>
         </section>
       </Fade>

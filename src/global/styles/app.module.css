@@ -1,6 +1,7 @@
 .mainWrap {
   overflow: overlay;
   max-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .mainWrap::-webkit-scrollbar {
@@ -18,6 +19,7 @@
 }
 
 .mainSection {
+  position: relative;
   min-height: 150vh;
   background-image: 
     linear-gradient(
@@ -34,7 +36,7 @@
 
 .socialWrap {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 60px;
 }
 
@@ -69,11 +71,24 @@
 
 .contentSection {
   display: flex;
-  gap: 10%;
-  width: 100%;
+  justify-content: center;
+}
+
+.contentSection > div:nth-child(1) {
+  display: flex;
+  gap: 5%;
+  width: fit-content;
   color: var(--white-900);
   align-items: center;
   justify-content: center;
+}
+
+.informationSection > div > div:nth-child(2) {
+  width: 40%;
+}
+
+.cultureSection > div > div:nth-child(1) {
+  width: 30%;
 }
 
 .contentSection h2 {
@@ -89,4 +104,122 @@
   display: flex;
   justify-content: center;
   margin: 164px 0;
+}
+
+@media (max-width: 1326px) {
+  .imageWrap > img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1056px) {
+  .socialWrap {
+    top: 80%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transform: rotate(180deg);
+  }
+
+  .socialWrap span {
+    writing-mode: horizontal-tb !important;
+  }
+
+  .socialWrap div {
+    flex-direction: row !important;
+  }
+}
+
+@media (max-width: 1020px) {
+  .cultureSection > div > div:nth-child(1),
+  .informationSection > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contentSection > div:nth-child(1) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .informationSection > div:nth-child(1) {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .cultureSection > div > div:nth-child(1) {
+    width: 60%;
+  }
+
+  .contentSection h2 {
+    text-align: center;
+  }
+
+  .contentSection p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 870px) {
+  .content {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .content div {
+    justify-content: center;
+  }
+  
+  .content h1 {
+    font-size: 88px;
+  }
+  
+  .content span {
+    font-size: 68px;
+    opacity: 0.8;
+    line-height: 68px;
+  }
+}
+
+@media (max-width: 676px) {
+  .informationSection > div > div:nth-child(2) {
+    width: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentSection h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 440px) {
+  .imageWrap img {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .cultureSection > div > div:nth-child(1),
+  .informationSection > div > div:nth-child(2) {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 422px) {
+  .content {
+    margin-top: 0;
+  }
+
+  .content h1 {
+    font-size: 48px;
+  }
+
+  .content span {
+    font-size: 38px;
+    line-height: 40px;
+  }
 }

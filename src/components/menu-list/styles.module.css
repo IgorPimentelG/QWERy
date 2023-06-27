@@ -1,0 +1,49 @@
+.menuWrap {
+  position: fixed;
+  width: 250px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black-900);
+  padding: 8px;
+  z-index: 999;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.links > a {
+  color: var(--white-900);
+  text-decoration: none;
+  transition: .2s ease-in;
+}
+
+.links > a:hover {
+  opacity: 0.8;
+}
+
+.btnCloseWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.btnCloseWrap > button {
+  background-color: transparent;
+  color: var(--orange-900);
+  font-size: 34px;
+  transition: all .5s ease-in;
+}
+
+.btnCloseWrap > button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .menuWrap {
+    width: 100vw;
+  }
+}

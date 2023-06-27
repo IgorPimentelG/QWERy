@@ -14,3 +14,9 @@
   border: 2px solid var(--orange-900);
   width: 80px;
 }
+
+@media (max-width: 1020px) {
+  .line {
+    display: none;
+  }
+}

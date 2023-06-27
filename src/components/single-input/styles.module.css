@@ -4,6 +4,7 @@
 
 .inputWrap input {
   width: 45%;
+  height: 36px;
   outline: none;
   padding: 16px 8px;
   color: var(--white-900);
@@ -14,7 +15,8 @@
 
 .btnSubmit {
   font-size: 24px;
-  padding: 8px 16px;
+  width: 70px;
+  height: 70px;
   background-color: var(--orange-900);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
