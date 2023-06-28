@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from './styles.module.css';
 
 export interface ISlide {
@@ -62,7 +63,7 @@ export const Slider: React.FC<Props> = ({ slides }) => {
       >
         {slides.map((slide) => (
           <div>
-            <img src={slide.image} alt={slide.title} />
+            <LazyLoadImage src={slide.image} alt={slide.title} />
           </div>
         ))}
       </div>

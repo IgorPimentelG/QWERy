@@ -16,6 +16,7 @@ import {
 } from '@components';
 import styles from '@global/styles/app.module.css';
 import { useRef } from 'react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Fade from 'react-reveal/Fade';
 
 const App: React.FC = () => {
@@ -103,7 +104,7 @@ const App: React.FC = () => {
         >
           <div>
             <div className={styles.imageWrap}>
-              <img src={MountainSmallImage} />
+              <LazyLoadImage src={MountainSmallImage} alt="Mountains in Indonesia" />
             </div>
 
             <div>
@@ -178,7 +179,7 @@ const App: React.FC = () => {
             </div>
 
             <div className={styles.imageWrap}>
-              <img src={PeopleImage} />
+              <LazyLoadImage  src={PeopleImage} alt="Indonesia culture" />
             </div>
           </div>
         </section>
